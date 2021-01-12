@@ -1,0 +1,30 @@
+.success, .cancel, .pending{
+    font-size: 18px;
+    
+}
+.success:before {
+        content: "•";
+        color: #10CA93;
+        text-shadow: #10CA93 0 0 5px;
+        margin: 0 10px;
+}
+
+.cancel:before {
+        content: "•";
+        color: #F25767;
+        text-shadow: #F25767 0 0 5px;
+        margin:0 10px;
+}
+.pending:before {
+        content: "•";
+        color: #FF9F00;
+        text-shadow: #FF9F00 0 0 5px;
+        margin:0 10px;
+}
+
+.actions{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+}

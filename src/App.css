@@ -1,38 +1,164 @@
-.App {
-  text-align: center;
+*, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dashboard {
+  background: #F7F7FA;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.overView {
+  /* background: #8E24AA; */
+  /* background:linear-gradient(45deg,#8E24AA,#8d579c); */
+  background: linear-gradient(45deg, #8E24AA, #7b1fa2);
+  color: #fff;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 5px 0px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px;
+  font-size: 17px;
+  border: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* .card{
+  height: 290px;
+  max-height: 280px;
+} */
+
+/* .cards .row .card .card-body .header{
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content:space-between;
+  padding-left:30px;
+  padding-right:30px;
+} */
+
+.cards .row .card .card-body .body {
+  /* height: 170px; */
+  display: flex;
+  align-items: center;
+  /* border: 1px black solid; */
+}
+
+.card .card-body .header .fas {
+  font-size: 30px;
+}
+
+.card-footer, .card-header {
+  background: none;
+  border: none;
+}
+
+.totalProfit {
+  /* background:#3A7AFE; */
+  background: linear-gradient(45deg, #0288d1, #26c6da);
+  border: none;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 5px 0px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px;
+}
+
+.orders {
+  /* background-color:#f6960b; */
+  /* background:linear-gradient(45deg,#f9b115,#f6960b); */
+  background: linear-gradient(45deg, #ff6f00, #ffca28);
+  border: none;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 5px 0px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px;
+}
+
+.customers {
+  /* background: #10ca93; */
+  background: linear-gradient(45deg, #43a047, #1de9b6);
+  border: none;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 5px 0px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px;
+}
+
+.feedback {
+  background: linear-gradient(45deg, #ff5252, #f48fb1);
+  color: #fff;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 5px 0px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px;
+  font-size: 17px;
+  border: none;
+}
+
+.timeline {
+  overflow: scroll;
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+}
+
+.timeline::-webkit-scrollbar {
+  display: none;
+}
+
+.card.table {
+  display: flex;
+  align-items: flex-end;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* max-height: 240px; */
 }
 
-.App-link {
-  color: #61dafb;
+.MuiPaper-root.MuiTableContainer-root.MuiPaper-elevation1::-webkit-scrollbar {
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo {
+  font-size: 25px;
+}
+.test{
+  position: relative;
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+}
+.ODCanceled, .ODDelivered, .ODPending{
+  padding-left: 30px;
+  border: none;
+}
+.orderData.ODCanceled:before {
+  content: '';
+  width: 0;
+  height: 100%;
+  position: absolute;
+  border: 4px solid rgb(255, 42, 0);
+  left: 0; 
+  border-radius:20px;
+}
+.orderData.ODDelivered:before {
+  content: '';
+  width: 0;
+  height: 100%;
+  position: absolute;
+  border: 4px solid#43a047;
+  left: 0; 
+  border-radius:20px;
+}
+.orderData.ODPending:before {
+  content: '';
+  width: 0;
+  height: 100%;
+  position: absolute;
+  border: 4px solid #ff6f00;
+  left: 0; 
+  border-radius:20px;
+}
+.card .card-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.TimeLine-box:before {
+  content: '';
+  width: 0;
+  height: 100%;
+  position: absolute;
+  border: 4px solid #0288d1;
+  left: 0; 
+  border-radius:20px;
 }

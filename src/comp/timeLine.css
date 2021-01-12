@@ -1,0 +1,26 @@
+.timeLine {
+    /* height: 200px; */
+    width: 100%;
+    padding-top: 80px;
+    text-align: center;
+    /* background: #52C0F5; */
+    /* color: #FFF; */
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+.cards{
+    position: relative;
+}
+
+.card-content .row{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+}
+.card-content .row .col.title{
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+}
